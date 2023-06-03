@@ -33,12 +33,11 @@ function Header(){
           </li>
         </ul>
       </div>
+      <div id="bT">
       <Link className ="login-btn" to="/BookingPage">Booking Appointment</Link>
-      <Link className="login-btn" to="/Subscription">Susbscription</Link>
+        <Link className="login-btn" to="/Subscription">Susbscription</Link>
 
-
-      
-      
+      </div>
     </div>
     </nav>
     );
