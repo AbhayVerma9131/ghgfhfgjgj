@@ -5,6 +5,15 @@
   background-color: #f5f5f5;
   border-radius: 5px;
 }
+h2{
+  padding-top: 30px;
+  margin-bottom: 25px;
+}
+.blocki
+{
+  margin-bottom: 30px;
+  display:grid;
+}
 
 .subscription-heading {
   text-align: center;
@@ -39,6 +48,11 @@
 
 .form-group {
   margin-bottom: 20px;
+}
+
+input{
+  margin: 10px;
+  align-items: center;
 }
 
 .form-input {

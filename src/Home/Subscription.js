@@ -79,11 +79,12 @@ function Subscription() {
 
   return (
     <div className="container">
-      <h1 className="heading">On-Demand Car Wash Subscription</h1>
+      
       {!submitted ? (
         <form onSubmit={handleSubmit}>
           <div className="card">
-            <h2 className="section-heading">Select a Subscription Type:</h2>
+          <h1 className="heading">On-Demand Car Wash Subscription</h1>
+            <div class="blocki"><h2 className="section-heading">Select a Subscription Type:</h2>
             <label>
               <input
                 type="radio"
@@ -106,15 +107,18 @@ function Subscription() {
               Quarterly Subscription
             </label>
             <p className="subscription-description">{getDescription('Quarterly')}</p>
+            </div>
           </div>
 
           <div className="card">
+             <hr></hr>
             <h2 className="section-heading">Enter Your Contact Information:</h2>
             <div className="form-group">
-              <label htmlFor="name">Name:</label>
+              {/* <label htmlFor="name">Name:</label> */}
               <input
                 type="text"
                 id="name"
+                placeholder='Name'
                 name="name"
                 value={name}
                 onChange={(event) => setName(event.target.value)}
@@ -123,11 +127,12 @@ function Subscription() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email:</label>
+              {/* <label htmlFor="email">Email:</label> */}
               <input
                 type="email"
                 id="email"
                 name="email"
+                placeholder='Email'
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 className="form-input"
@@ -135,9 +140,10 @@ function Subscription() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="phone">Phone:</label>
+              {/* <label htmlFor="phone">Phone:</label> */}
               <input
                 type="tel"
+                placeholder='Contact No.'
                 id="phone"
                 name="phone"
                 value={phone}
