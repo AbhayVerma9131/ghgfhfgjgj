@@ -135,22 +135,20 @@ function BookingPage() {
       <h1>On-Demand Car Wash Booking</h1>
 
       <form onSubmit={submitBooking}>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required />
+        <input type="text" id="name" value={name} placeholder='Name' onChange={(e) => setName(e.target.value)} required />
 
-        <label htmlFor="phone">Phone:</label>
-        <input type="text" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+    
+        <input type="text" id="phone" value={phone} placeholder='phone' onChange={(e) => setPhone(e.target.value)} required />
 
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        
+        <input type="email" id="email" value={email} placeholder='Email' onChange={(e) => setEmail(e.target.value)} required />
 
-        <label htmlFor="date">Preferred Date:</label>
-        <input type="date" id="date" value={date} onChange={(e) => setDate(e.target.value)} required />
+      
+        <input type="date" id="date" value={date} placeholder='Preferred Data' onChange={(e) => setDate(e.target.value)} required />
+        <label id="Ap">Appointment:</label>
+        <input type="time" id="time" value={time} placeholder='Prefered Time' onChange={(e) => setTime(e.target.value)} required />
 
-        <label htmlFor="time">Preferred Time:</label>
-        <input type="time" id="time" value={time} onChange={(e) => setTime(e.target.value)} required />
-
-        <label htmlFor="washPacks">WashPacks:</label>
+        <label id="Ap">WashPacks:</label>
         <select id="washPacks" value={washPacks} onChange={(e) => setWashPacks(e.target.value)} required>
           <option value="">Select a WashPacks</option>
           <option value="normal">Normal Wash</option>
@@ -158,7 +156,7 @@ function BookingPage() {
           <option value="premium">Premium Wash</option>
         </select>
 
-        <label htmlFor="carName">Car Name:</label>
+        <label id="Ap">Car Name:</label>
         <select id="carName" value={carName} onChange={(e) => setCarName(e.target.value)} required>
           <option value="">Select a car</option>
           <option value="SUV">SUV</option>
@@ -167,7 +165,7 @@ function BookingPage() {
           <option value="DACIA">DACIA</option>
         </select>
 
-        <label htmlFor="location">Location:</label>
+        <label id="Ap">Location:</label>
 <select id="location" value={location} onChange={(e) => setLocation(e.target.value)} required>
   <option value="">Select a location</option>
   <option value="Bhopal">Bhopal</option> {/* Updated option value */}
